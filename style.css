@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+:root{
+    --corheader: #FFFFFF;
+    --cor_entrar: #E50914;
+    --cor_entrar_hover: #B80F17;
+    --cor_border: #232323;
+    --cor_section: #000000;
+    --cor_section_js: #2D2D2D; 
+    --cor_section_jshover: #4E4E4E;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body{width: 100vw; background-color: gray;}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+}
+
+.div_plan_header{
+    display: block;
+    width: 100%;
+    padding: 23px;
+    background-color: white;
+}
+
+.div_plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin_right{
+    margin-right: 25px;
+}
+
+.novo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--cor_entrar);
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 60px;
+    height: 23px;
+    margin-bottom: 2px;
+}
+
+.apt{
+    font-size: 20px;
+}
+
+.strong{
+    font-weight: 900;
+    color: #000000;
+    font-size: 23px;
+}
+
+#sbm{
+    text-decoration: none;
+    font-size: 16px;
+    color: #197FED;
+    font-weight: 700;
+}
+
+.banner_header{
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    border-top: 17px solid black;
+    
+}
+
+.logo_entrar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(#000000e1 30%, #000000a6);
+}
+
+.div_logo_entrar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo_netflix_img{
+    width: 170px;
+}
+
+#but_entrar{
+    cursor: pointer;
+    border: none;
+    padding: 7px;
+    width: 73px;
+    border-radius: 5px;
+    background-color: var(--cor_entrar);
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+#but_entrar:hover{
+    background-color: var(--cor_entrar_hover);
+    transition: 0.5s;
+}
+
+.banner_main{
+    padding: 20px;
+    background-color: #000000a6;
+}
+
+.banner_main_email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 120px;
+}
+
+.title_email{
+    width: 85%;
+    text-align: center;
+    padding: 20px;
+}
+
+#h1{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#h2{
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+#h3{
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.div_input_email{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin-bottom: 130px;
+}
+
+#iemail{
+    height: 50px;
+    width: 400px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #161412d0;
+    color: rgba(255, 255, 255, 0.863);
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid gray;
+}
+
+
+#iemail::placeholder{
+    color: rgba(255, 255, 255, 0.692);
+}
+
+input:focus-visible {
+    outline: 0px solid rgba(255, 255, 255, 0);
+}
+
+#but_vamos_la{
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 170px;
+    background-color: #eb0b16;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin-left: -7px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#but_vamos_la:hover{
+    background-color: #B80F17;
+    transition: 0.3s;
+}
+
+.div_section_border-top{
+    border-top: 8px solid var(--cor_border);
+}
+.div_sections{
+    display: flex;
+    background-color: var(--cor_section);
+    height: 500px;
+    border-bottom: 8px solid var(--cor_border);
+}
+
+.div_section_txt{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.div_section_txt_hp{
+    width: 70%;
+    max-width: 700px;
+    font-size: 23px;
+    margin-right: 10px;
+    
+}
+
+#enjoy_tv{
+    color: white;
+    font-weight: 800;
+}
+
+#assistap{
+    color: white;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    
+}
+
+.div_section_img{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#tv_section{
+    height: 350px;
+}
+
+.div_row_reverse{
+    flex-direction: row-reverse;
+}
+
+.div_row_reverse_margin{
+    margin-right: 15px;
+}
+
+.div_section_txt_hp_esp{
+    width: 75%;
+}
+
+.tv_margin{
+    margin-left: 50px;
+    height: 380px;
+}
